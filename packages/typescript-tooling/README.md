@@ -62,9 +62,10 @@ reference). This works since TST creates a `jest.config.js` at the root of your
 project which extends `.tst/jest.config.js`. Settings and commands for other
 tools operate the same way.
 
-_Nothing special is happening here!_ You can always directly execute generated
-commands without using TST. Since no magic is involved, it's easy to stop using
-this tool, just move config files from `.tst` into the project root and add the
+_Nothing special is happening here!_ TST is just a bunch of config files and
+shortcuts for writing long CLI commands which can always be executed directly
+without using TST. Since no magic is involved, it's easy to stop using this
+tool, just move config files from `.tst` into the project root and add the
 commands TST generates to the `scripts` section of your `package.json`. For
 example...
 
@@ -231,7 +232,15 @@ scripts you've defined.
 
 ## Notes
 
--
+- Test files are expected to live next to the code they cover are named
+  `<module-name>.spec.<ts|tsx>`, i.e. `Dog.ts` would be tested by `Dog.spec.ts`
+
+- Run `npx tst init` after upgrading TST or cloning down a project with TST to
+  ensure `.tst` is up-to-date
+
+- You can upgrade dependencies TST relies on, but know that there is no
+  guarentee everything will still work together (normally you can bump
+  major TypeScript versions without problems)
 
 ## Disclaimer
 
