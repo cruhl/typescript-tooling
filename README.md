@@ -2,6 +2,8 @@
 
 A tool for creating and managing TypeScript projects with minimal configuration.
 
+<img align="center" src="https://github.com/cruhl/typescript-tooling/blob/master/packages/typescript-tooling/images/logo.png" alt="Logo">
+
 ## Features
 
 TypeScript Tooling...
@@ -46,7 +48,7 @@ npm run example:build
 npx tst help
 ```
 
-![Usage](https://github.com/cruhl/typescript-tooling/blob/master/images/usage.jpg)
+![Usage](https://github.com/cruhl/typescript-tooling/blob/master/packages/typescript-tooling/images/usage.jpg)
 
 ## How does TST work?
 

@@ -2,7 +2,7 @@
 
 A tool for creating and managing TypeScript projects with minimal configuration.
 
-![Logo](https://github.com/cruhl/typescript-tooling/blob/master/packages/typescript-tooling/images/logo.png)
+<img align="center" src="https://github.com/cruhl/typescript-tooling/blob/master/packages/typescript-tooling/images/logo.png" alt="Logo">
 
 ## Features
 
