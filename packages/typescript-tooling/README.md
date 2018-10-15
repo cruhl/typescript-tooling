@@ -148,14 +148,16 @@ You can do the same thing for TSLint settings.
 
 ### Overriding Jest Settings
 
-TST exports a Jest configuration object from `.tst/jest.config.js` you can
-modify and re-export from your project's `jest.config.js`...
+TST exports a Jest configuration object from `.tst/jest.config.js` which can be
+modified and re-exported from your project's `jest.config.js`...
 
 ```js
 // `jest.config.js`
 
 module.exports = {
   ...require(".tst/jest.config.js"),
+
+  verbose: true,
   bail: true
 };
 ```
@@ -175,9 +177,8 @@ versioned/deployed `types`, `api`, and `ui` packages? No problem!
    sure to set `"private": true`. _Private packages only require the `name` and
    `private` fields._
 
-3. If this is a normal TypeScript package, don't forget TST looks for
-   `packages/<package-name>/src/index.ts` as the entry point. You can generate
-   TST's default npm scripts (`test`, `test:watch`, `dev`, and `build`) by
+3. TST looks for `packages/<package-name>/src/index.ts` as the entry point. You
+   can generate NPM scripts (`test`, `test:watch`, `dev`, and `build`) by
    running...
 
 ```
@@ -192,14 +193,14 @@ npx tst scripts
 
 ### Delegating NPM Scripts to Packages
 
-It's useful to keep all the project's NPM scripts available from the root so you
-aren't constantly bouncing around using `cd`. However, an overly complicated set
+It's useful to keep all NPM scripts available from the project root so you
+aren't constantly bouncing around with `cd`. However, an overly complicated set
 of NPM scripts in one gigantic `package.json` isn't so great.
 
 Luckily, [Lerna](https://github.com/lerna/lerna) allows you to execute NPM
 Scripts from any package without leaving the project root. Let's say you want to
 use [Parcel](https://parceljs.org/) to build deployable bundles for a `ui`
-package. You can add the build script in `packages/ui/package.json`...
+package; you could add the build script in `packages/ui/package.json`...
 
 ```json
 // `packages/ui/package.json`
@@ -211,8 +212,8 @@ package. You can add the build script in `packages/ui/package.json`...
 }
 ```
 
-To enable `npm run ui:build` from the project root, we need to modify
-the NPM script in the root `package.json`...
+To enable `npm run ui:build` from the root, we need to modify the NPM script in
+the base `package.json`...
 
 ```
 // `package.json`
@@ -225,13 +226,18 @@ the NPM script in the root `package.json`...
 }
 ```
 
-It's important to know `npx tst scripts` or `npm run tst:scripts` doesn't override scripts you've defined.
+It's important to note `npx tst scripts` or `npm run tst:scripts` won't override
+scripts you've defined.
+
+## Notes
+
+-
 
 ## Disclaimer
 
-_This is my first usable open-source tool!_ I would greatly appreciate help
-making TST more "professional." Please open an issue if you have any comments,
-feedback, or suggestions...
+_**This is my first usable open-source tool!**_ Any help making TST more
+"professional" would be greatly appreciated. Please open an issue if you have
+any comments, suggestions, or feedback...
 
 ## License
 
