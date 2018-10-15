@@ -3,12 +3,10 @@
   "extends": ["tslint:latest", "tslint-config-prettier"],
 
   "rules": {
-    // Ban `import * as foo from "bar/bazz";`
+    // Ban `import * as Foo from "bar/bazz";`
+    //                               ^ No.
     // Make an exception for cross-package imports `~/<package>`
     "no-submodule-imports": [true, "~"],
-
-    // Don't order imports (from `tslint:latest`/`tslint-config-prettier`)
-    "ordered-imports": false,
 
     // Ban reliance on packages which aren't actually imported
     "no-implicit-dependencies": false,

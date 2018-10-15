@@ -19,19 +19,19 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
 
-    // Allow imports like `import Moment from "moment"; Moment("<date>");`
+    // Allow imports like `import Moment from "moment";`
     "esModuleInterop": true,
 
     // Lets us use modules which have funky default exports
     "allowSyntheticDefaultImports": true,
 
-    // Lets us import JSON directly e.g. `import DATA from data.json`
+    // Lets us import JSON directly e.g. `import * as Data from "data.json";`
     "resolveJsonModule": true,
 
     // Don't check the types of our dependencies
     "skipLibCheck": true,
 
-    // By default, allow React-style JSX
+    // Allow React-style JSX
     "jsx": "react"
   }
 }

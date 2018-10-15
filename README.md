@@ -18,7 +18,7 @@ TypeScript Tooling...
 
 ## Getting Started
 
-1. Install `tst`... _ignore warnings for missing `peerDependencies`_
+1. Install and save `tst`... _ignore warnings for missing `peerDependencies`_
 
 ```
 npm install --save-dev typescript-tooling
@@ -226,6 +226,12 @@ the NPM script in the root `package.json`...
 ```
 
 It's important to know `npx tst scripts` or `npm run tst:scripts` doesn't override scripts you've defined.
+
+## Disclaimer
+
+_This is my first usable open-source tool!_ I would greatly appreciate help
+making TST more "professional." Please open an issue if you have any comments,
+feedback, or suggestions...
 
 ## License
 
