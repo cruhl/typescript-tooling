@@ -1,4 +1,4 @@
-# Typescript Tooling // `tst`
+# Typescript Tooling `// tst`
 
 > A tool for creating and managing TypeScript projects with minimal configuration
 
