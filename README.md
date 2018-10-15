@@ -1,6 +1,6 @@
 # Typescript Tooling // `tst`
 
-## A tool for creating and managing TypeScript projects with minimal configuration.
+> A tool for creating and managing TypeScript projects with minimal configuration.
 
 <p align="center">
   <image src="https://github.com/cruhl/typescript-tooling/blob/master/packages/typescript-tooling/images/logo.png" alt="Logo">
