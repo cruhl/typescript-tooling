@@ -10,6 +10,7 @@ export const icons = {
 export const tool = _.curry<string, string>(Chalk.bold.italic);
 export const code = _.curry<string, string>(Chalk.bgBlack.yellow);
 export const file = _.curry<string, string>(Chalk.blue);
+export const arg = file;
 
 export const notification = (icon: string): string =>
   `${Chalk.grey("(")}${icon}${Chalk.grey(")")}`;

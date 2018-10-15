@@ -1,7 +1,9 @@
 import * as Log from "./Log";
 import * as Shell from "./Shell";
 
-export const help = `Tests package with ${Log.tool("Jest")}`;
+export const help = `Tests ${Log.arg("<package-name>")} with ${Log.tool(
+  "Jest"
+)}`;
 
 export const action = async (args: any, options: any, logger: Logger) => {
   logger.info("");
