@@ -50,7 +50,7 @@ npm run example:build
 npx tst help
 ```
 
-![Usage](https://github.com/cruhl/typescript-tooling/blob/master/packages/typescript-tooling/images/usage.jpg)
+![Usage](https://github.com/cruhl/typescript-tooling/blob/master/packages/typescript-tooling/images/usage.png)
 
 ## How does TST work?
 
