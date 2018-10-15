@@ -1,7 +1,7 @@
 {
   "name": "typescript-tooling",
   "description": "This package helps keep TypeScript configuration and tooling synced up between seperate projects.",
-  "version": "4.0.3",
+  "version": "4.1.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cruhl/typescript-tooling.git"
