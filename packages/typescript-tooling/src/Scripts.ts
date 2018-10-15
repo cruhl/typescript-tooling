@@ -3,9 +3,7 @@ import * as FS from "fs";
 import * as Log from "./Log";
 import * as Utils from "./Utils";
 
-export const help = `Automatically generates ${Log.tool(
-  "npm scripts"
-)} for packages`;
+export const help = `Generates ${Log.tool("npm scripts")} for packages`;
 
 export const action = (_args: any, options: any, logger: Logger) => {
   const packages = Utils.packages();

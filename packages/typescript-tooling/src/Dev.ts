@@ -4,7 +4,7 @@ import * as Log from "./Log";
 import * as Shell from "./Shell";
 import * as Utils from "./Utils";
 
-export const help = `Run a package with ${Log.tool("nodemon")}`;
+export const help = `Executes package with ${Log.tool("nodemon")}`;
 
 export const action = async (args: any, _options: any, logger: Logger) => {
   const packagePath = Utils.packagePath(args.packageName);

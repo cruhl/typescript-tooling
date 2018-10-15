@@ -14,7 +14,7 @@ const CONFIG_DEFAULTS_DIRECTORY_PATH = "../configs";
 
 const EXAMPLE_PACKAGES_DIRECTORY = "../packages";
 
-export const help = `Configure ${Log.tool(
+export const help = `Configures ${Log.tool(
   "Typescript Tooling"
 )} in the current directory`;
 

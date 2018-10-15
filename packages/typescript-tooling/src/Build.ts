@@ -2,7 +2,7 @@ import * as Log from "./Log";
 import * as Shell from "./Shell";
 import * as Utils from "./Utils";
 
-export const help = `Build a package with ${Log.tool("Parcel")}`;
+export const help = `Builds package with ${Log.tool("Parcel")}`;
 
 export const action = (args: any, _options: any, logger: Logger) => {
   const packagePath = Utils.packagePath(args.packageName);

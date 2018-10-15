@@ -1,7 +1,7 @@
 import * as Log from "./Log";
 import * as Shell from "./Shell";
 
-export const help = `Install and save required ${Log.tool("peerDependencies")}`;
+export const help = `Installs and saves ${Log.tool("peerDependencies")}`;
 
 export const action = (packageJSON: any) => (
   _args: any,
