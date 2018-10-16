@@ -44,6 +44,10 @@ npm run example:dev
 npm run example:build
 ```
 
+**There's also a
+[demo project](https://github.com/cruhl/typescript-tooling-demo)
+you can clone and explore.**
+
 ## Usage
 
 ```
