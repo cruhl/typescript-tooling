@@ -248,7 +248,7 @@ scripts you've defined.
 
 ## Disclaimer
 
-Any help making TST more "professional" would be greatly appreciated. Please
+Any help making TST more "professional" would be greatly appreciated! Please
 open an issue if you have any comments, suggestions, or feedback...
 
 ## License
