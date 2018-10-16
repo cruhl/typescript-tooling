@@ -248,9 +248,8 @@ scripts you've defined.
 
 ## Disclaimer
 
-_**This is my first usable open-source tool!**_ Any help making TST more
-"professional" would be greatly appreciated. Please open an issue if you have
-any comments, suggestions, or feedback...
+Any help making TST more "professional" would be greatly appreciated. Please
+open an issue if you have any comments, suggestions, or feedback...
 
 ## License
 
