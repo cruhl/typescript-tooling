@@ -1,4 +1,4 @@
-# Typescript Tooling `// TSt`
+# Typescript Tooling `// TST`
 
 > A tool for creating and managing TypeScript projects with minimal configuration
 
@@ -52,21 +52,21 @@ npx tst help
 
 ![Usage](https://github.com/cruhl/typescript-tooling/blob/master/packages/typescript-tooling/images/usage.png)
 
-## How does TSt work?
+## How does TST work?
 
 Running `tst init` copies config files for various tools into a new `.tst`
-directory in the root of your project. Under the hood, TSt's CLI executes normal
+directory in the root of your project. Under the hood, TST's CLI executes normal
 commands which use those defaults. For example, `tst test <package-name>` runs
 the command `npx jest packages/<package-name>` (which is also echo'ed out for
-reference). This works since TSt creates a `jest.config.js` at the root of your
+reference). This works since TST creates a `jest.config.js` at the root of your
 project which extends `.tst/jest.config.js`. Settings and commands for other
 tools operate the same way.
 
-_Nothing special is happening here!_ TSt is just a bunch of config files and
+_Nothing special is happening here!_ TST is just a bunch of config files and
 shortcuts for writing long CLI commands which can always be executed directly
-without using TSt. Since no magic is involved, it's easy to stop using this
+without using TST. Since no magic is involved, it's easy to stop using this
 tool, just move config files from `.tst` into the project root and add the
-commands TSt generates to the `scripts` section of your `package.json`. For
+commands TST generates to the `scripts` section of your `package.json`. For
 example...
 
 ```
@@ -100,14 +100,14 @@ Lerna, Nodemon, and Jest, check out the
 
 ### Overriding TypeScript and TSLint Settings
 
-TSt creates or modifies `<tsconfig|tslint>.json` in your project root to extend
+TST creates or modifies `<tsconfig|tslint>.json` in your project root to extend
 the defaults in the `.tst` directory...
 
 ```
 // `<tsconfig|tslint>.json`
 
 {
-  // TSt adds this line if it isn't already set
+  // TST adds this line if it isn't already set
   "extends": "./.tst/<tsconfig|tslint>.json"
 }
 ```
@@ -149,7 +149,7 @@ You can do the same thing for TSLint settings.
 
 ### Overriding Jest Settings
 
-TSt exports a Jest configuration object from `.tst/jest.config.js` which can be
+TST exports a Jest configuration object from `.tst/jest.config.js` which can be
 modified and re-exported from your project's `jest.config.js`...
 
 ```js
@@ -178,7 +178,7 @@ versioned/deployed `types`, `api`, and `ui` packages? No problem!
    sure to set `"private": true`. _Private packages only require the `name` and
    `private` fields._
 
-3. TSt looks for `packages/<package-name>/src/index.ts` as the entry point. You
+3. TST looks for `packages/<package-name>/src/index.ts` as the entry point. You
    can generate NPM scripts (`test`, `test:watch`, `dev`, and `build`) by
    running...
 
@@ -235,16 +235,16 @@ scripts you've defined.
 - Test files are expected to live next to the code they cover are named
   `<module-name>.spec.<ts|tsx>`, i.e. `Dog.ts` would be tested by `Dog.spec.ts`
 
-- Run `npx tst init` after upgrading TSt or cloning down a project with TSt to
+- Run `npx tst init` after upgrading TST or cloning down a project with TST to
   ensure `.tst` is up-to-date
 
-- You can upgrade dependencies TSt relies on, but know that there is no
+- You can upgrade dependencies TST relies on, but know that there is no
   guarentee everything will still work together (normally you can bump
   major TypeScript versions without problems)
 
 ## Disclaimer
 
-_**This is my first usable open-source tool!**_ Any help making TSt more
+_**This is my first usable open-source tool!**_ Any help making TST more
 "professional" would be greatly appreciated. Please open an issue if you have
 any comments, suggestions, or feedback...
 
