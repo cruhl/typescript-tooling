@@ -57,7 +57,8 @@ export const scripts = (packages: string[]) =>
       [`${packageName}:test`]: `tst test ${packageName}`,
       [`${packageName}:test:watch`]: `tst test ${packageName} --watch`,
       [`${packageName}:dev`]: `tst dev ${packageName}`,
-      [`${packageName}:build`]: `tst build ${packageName}`
+      [`${packageName}:build`]: `tst build ${packageName}`,
+      [`${packageName}:lint`]: `tst lint ${packageName}`
     }),
     {
       ["tst:init"]: "tst init --install false",

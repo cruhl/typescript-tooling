@@ -7,7 +7,8 @@
     "typescript-tooling:test": "tst test typescript-tooling",
     "typescript-tooling:test:watch": "tst test typescript-tooling --watch",
     "typescript-tooling:dev": "tst dev typescript-tooling",
-    "typescript-tooling:build": "tst build typescript-tooling"
+    "typescript-tooling:build": "tst build typescript-tooling",
+    "typescript-tooling:lint": "tst lint typescript-tooling"
   },
   "devDependencies": {
     "@types/jest": "^23.3.1",
