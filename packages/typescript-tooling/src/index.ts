@@ -11,6 +11,7 @@ import * as Scripts from "./Scripts";
 import * as Deps from "./Deps";
 
 import * as Test from "./Test";
+import * as Lint from "./Lint";
 import * as Dev from "./Dev";
 import * as Build from "./Build";
 
@@ -91,6 +92,11 @@ CLI.command("test", Test.help)
   .argument("<package-name>", Log.packages(packages), packages)
   .option("-w --watch", "Re-run tests on file changes", CLI.BOOLEAN, false)
   .action(Test.action);
+
+CLI.command("lint", Lint.help)
+  .help(Lint.help)
+  .argument("<package-name>", Log.packages(packages), packages)
+  .action(Lint.action);
 
 CLI.command("dev", Dev.help)
   .help(Dev.help)
